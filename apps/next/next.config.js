@@ -13,11 +13,15 @@ const rule = {
 };
 
 const nextConfig = {
-  // reanimated (and thus, Moti) doesn't work with strict mode currently...
-  // https://github.com/nandorojo/moti/issues/224
-  // https://github.com/necolas/react-native-web/pull/2330
-  // https://github.com/nandorojo/moti/issues/224
-  // once that gets fixed, set this back to true
+async redirects() {
+    return [
+      {
+        source: '/works',
+        destination: '/work',
+        permanent: true,
+      },
+    ]
+  },
   reactStrictMode: false,
   swcMinify: false,
   experimental: {
@@ -92,7 +96,7 @@ const nextConfig = {
       'react-native$': 'react-native-web',
       '@expo/vector-icons': 'react-native-vector-icons',
       'react-native-webview': 'react-native-web-webview',
-
+'react-native-pdf$': 'react-pdf'
     }
     config.resolve.extensions = [
       '.web.js',

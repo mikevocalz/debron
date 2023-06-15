@@ -6,7 +6,6 @@ import { FC, Suspense } from "react";
 
 import dynamic from "next/dynamic";
 
-
 const source = require('../../../apps/expo/assets/DominiqueEbron_Resume.pdf');
 
 const MobilePDF: FC = () => {
