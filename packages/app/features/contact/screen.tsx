@@ -2,7 +2,7 @@
 import React, { useState, lazy, Suspense } from 'react';
 import { ScrollView, Image, Text, View, P } from 'app/design/TailwindComponents'
 import { Platform, useWindowDimensions, StyleSheet, Dimensions, ActivityIndicator } from 'react-native'
-import { MobilePDF } from 'app/components/MobilePDF';
+import MobilePDF from 'app/components/MobilePDF';
 
 
 export function ContactScreen() {
