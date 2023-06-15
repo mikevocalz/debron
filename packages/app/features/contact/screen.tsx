@@ -1,14 +1,12 @@
 
-import React, { useState, lazy, Suspense } from 'react';
 import { ScrollView, Image, Text, View, P } from 'app/design/TailwindComponents'
 import { Platform, useWindowDimensions, StyleSheet, Dimensions, ActivityIndicator } from 'react-native'
-import MobilePDF from 'app/components/MobilePDF';
 
+const isWeb = Platform.OS === 'web';
 
 export function ContactScreen() {
   const { width, height } = useWindowDimensions();
 
-  const isWeb = Platform.OS === 'web';
 
 
   return (
@@ -27,9 +25,6 @@ export function ContactScreen() {
         <embed src="./DominiqueEbron_Resume.pdf"
           type="application/pdf" height="1000px" width='100%' className='mt-10' />
       }
-
-      {!isWeb && <MobilePDF />}
-
 
 
 
