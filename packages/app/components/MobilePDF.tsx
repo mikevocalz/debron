@@ -1,13 +1,15 @@
-'use client'
 import { View, Text } from "app/design/TailwindComponents"
+// @ts-ignore 
 import Pdf from 'react-native-pdf';
 import { ActivityIndicator, StyleSheet, Dimensions } from "react-native";
 import { FC, Suspense } from "react";
 
+import dynamic from "next/dynamic";
+
 
 const source = require('../../../apps/expo/assets/DominiqueEbron_Resume.pdf');
 
-export const MobilePDF: FC = () => {
+const MobilePDF: FC = () => {
   return (
     <Suspense fallback={<Text>Still Loading…</Text>}>
       <View>
@@ -40,3 +42,6 @@ const styles = StyleSheet.create({
     height: Dimensions.get('window').height,
   }
 })
+
+
+export default dynamic(() => Promise.resolve(MobilePDF), { ssr: false })
