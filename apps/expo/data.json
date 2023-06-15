@@ -1,0 +1,18 @@
+  [
+    {
+      "id": 1,
+      "notes": "15 second 3D Animation for a client**",
+      "date": "December 2022 - January 2023",
+      "my_role": "Producer & Rendering Artist",
+      "bio": "jhe",
+      "type": "3D"
+    },
+    {
+      "id": 2,
+      "notes": "15 second 3D Animation for a client**",
+      "date": "December 2022 - January 2023",
+      "my_role": "Producer & Rendering Artist",
+      "bio": "jhe",
+      "type": "2D"
+    }
+  ]

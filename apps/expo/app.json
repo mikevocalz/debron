@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Dominique Ebron",
+    "slug": "dominiqueebron",
+    "version": "1.0.0",
+    "scheme": "dominiqueebron",
+    "platforms": ["ios", "android"],
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/images/icon.png",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#a17a74"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.solito.dominiqueebron"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#a17a74"
+      },
+      "package": "com.solito.dominiqueebron"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 33,
+            "targetSdkVersion": 33,
+            "buildToolsVersion": "33.0.0",
+            "kotlinVersion": "1.6.20",
+            "minSdkVersion": 23
+          },
+          "ios": {
+            "deploymentTarget": "13.0"
+          }
+        }
+      ]
+    ]
+  }
+}

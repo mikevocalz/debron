@@ -1,0 +1,17 @@
+{
+  "version": "0.0.0",
+  "name": "app",
+  "main": "index.ts",
+  "dependencies": {
+    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/native-stack": "^6.9.12",
+    "get-youtube-id": "^1.0.1",
+    "moti": "latest",
+    "nativewind": "2.0.11",
+    "react-native-youtube": "^2.0.2",
+    "react-native-youtube-iframe": "^2.2.2",
+    "slugify": "^1.6.6",
+    "solito": "3.2.6"
+  },
+  "sideEffects": false
+}

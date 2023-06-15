@@ -1,0 +1,49 @@
+{
+  "name": "next-app",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "^16"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@expo/next-adapter": "5.0.2",
+    "@expo/vector-icons": "^13.0.0",
+    "@react-pdf/renderer": "^3.1.9",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.12.0",
+    "app": "*",
+    "file-loader": "^6.2.0",
+    "next": "13.4.4",
+    "next-sanity": "4.3.3",
+    "nextjs-progressbar": "^0.0.16",
+    "pdfjs": "^2.5.0",
+    "pdfjs-dist": "^3.6.172",
+    "raf": "^3.4.1",
+    "react-art": "^18.2.0",
+    "react-is": "^18.2.0",
+    "react-native-vector-icons-for-web": "^0.1.7",
+    "react-native-youtube": "^2.0.2",
+    "react-pdf": "^7.0.1",
+    "react-youtube": "^10.1.0",
+    "sanity": "^3.12.0",
+    "setimmediate": "^1.0.5",
+    "styled-components": "^5.3.9",
+    "url-loader": "^4.1.1"
+  },
+  "devDependencies": {
+    "@sanity/eslint-config-studio": "^2.0.1",
+    "@types/node": "17.0.21",
+    "@types/styled-components": "^5.1.26",
+    "autoprefixer": "10.4.14",
+    "critters": "^0.0.16",
+    "eslint-config-next": "13.2.0",
+    "tailwind-scrollbar": "3.0.4",
+    "tailwindcss": "3.3.2"
+  }
+}
