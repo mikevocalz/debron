@@ -1,5 +1,7 @@
 const { withExpo } = require('@expo/next-adapter')
 
+const { IgnorePlugin } = require('webpack');
+
 /** @type {import('next').NextConfig} */
 
 const rule = {
@@ -82,6 +84,11 @@ async redirects() {
     'react-native-blob-util',
     'react-native-pdf'
   ],
+   plugins: [
+   new IgnorePlugin({
+     resourceRegExp: /react-native-pdf/,
+   }),
+ ],
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.(ttf|png|jpg|jpeg|svg|pdf)$/,
