@@ -74,17 +74,18 @@ const nextConfig = {
   'styled-components',
   '@portabletext/react',
   'react-native-web-webview',
-    'react-native-webview'
+    'react-native-webview',
+    'react-native-blob-util',
+    'react-native-pdf'
   ],
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.(ttf|png|jpg|jpeg|svg|pdf)$/,
       loader: 'url-loader', // or directly file-loader
     },
-    
     )
 
-    config.module.rules.push(rule )
+    config.module.rules.push(rule)
 
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
