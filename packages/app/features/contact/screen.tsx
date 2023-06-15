@@ -19,7 +19,7 @@ export function ContactScreen() {
       contentContainerStyle={styles.contentContainer}
       className={` ${!isWeb ? 'bg-[#c7dedc]' : 'bg-transparent'} flex-1  max-w-7xl  min-w-screen `}>
 
-      <Text className='mt-10 font-[BebasNeue-Bold] text-6xl '>Contact</Text>
+      <Text className='mt-10 font-[BebasNeue-Bold] text-6xl '>Contact Me</Text>
 
       {isWeb &&
         <embed src="./DominiqueEbron_Resume.pdf"
