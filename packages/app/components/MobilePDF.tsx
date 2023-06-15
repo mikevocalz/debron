@@ -43,4 +43,4 @@ const styles = StyleSheet.create({
 })
 
 
-export default dynamic(() => Promise.resolve(MobilePDF), { ssr: false })
+export default MobilePDF
