@@ -82,7 +82,7 @@ async redirects() {
   'react-native-web-webview',
     'react-native-webview',
     'react-native-blob-util',
-    'react-native-pdf'
+  
   ],
    plugins: [
    new IgnorePlugin({
@@ -102,7 +102,8 @@ async redirects() {
       ...(config.resolve.alias || {}),
       'react-native$': 'react-native-web',
       '@expo/vector-icons': 'react-native-vector-icons',
-      'react-native-webview': 'react-native-web-webview'
+      'react-native-webview': 'react-native-web-webview',
+'react-native-pdf$': 'react-pdf'
     }
     config.resolve.extensions = [
       '.web.js',
