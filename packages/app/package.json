@@ -11,7 +11,7 @@
     "react-native-youtube": "^2.0.2",
     "react-native-youtube-iframe": "^2.2.2",
     "slugify": "^1.6.6",
-    "solito": "3.2.6"
+    "solito": "3.2.9"
   },
   "sideEffects": false
 }
