@@ -51,34 +51,6 @@ export function UserDetailScreen() {
 
   return (
     <>
-      {!isWeb &&
-        <Stack.Screen
-          options={{
-            headerBackVisible: false,
-            headerTitleAlign: 'center',
-            title: id?.toString(),
-            headerLeft: () => (
-              <FontAwesome
-                name='chevron-left'
-                style={{ paddingLeft: -3 }}
-                size={24}
-                onPress={() => {
-                  back();
-                }}
-                color="#fff"
-              />
-            ),
-            headerTintColor: '#fff',
-            headerStyle: {
-              backgroundColor: '#a17a74',
-            },
-            headerTitleStyle: {
-              //fontFamily: 'Real-SemiBold',
-              color: '#fff',
-            },
-
-          }} />
-      }
       <ScrollView
         showsHorizontalScrollIndicator={false}
         contentInsetAdjustmentBehavior='always'

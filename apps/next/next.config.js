@@ -28,6 +28,8 @@ async redirects() {
   swcMinify: false,
   experimental: {
     optimizeCss: true,
+      legacyBrowsers: false,
+      scrollRestoration: true,
   },
   images: {
     disableStaticImages: true,
