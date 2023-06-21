@@ -1,14 +1,14 @@
-import {createClient, groq } from 'next-sanity'
+import { createClient, groq } from 'next-sanity'
 
-export const getWorks= async () => {
+export const getWorks = async () => {
   const client = createClient({
     projectId: '73yurfrl',
     dataset: 'production',
-    apiVersion: '2023-03-04'
+    apiVersion: '2023-03-04',
   })
 
- return  client.fetch(
-groq`*[_type == 'work']{
+  return client.fetch(
+    groq`*[_type == 'work']{
   _id,
   _createdAt,
   name,
@@ -23,5 +23,5 @@ description,
 
 }| order(_createdAt desc)
 `
-)}
-
+  )
+}

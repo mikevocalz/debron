@@ -24,7 +24,7 @@ function WebLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <View
-        className="self-center container min-w-screen items-center min-h-full max-w-7xl mt-[110px] "
+        className="self-center container mx-auto min-w-screen items-center min-h-screen max-w-7xl mt-[110px] "
       > <HeaderComponent />
         {children}
       </View>
