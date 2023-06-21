@@ -1,6 +1,6 @@
 const { withExpo } = require('@expo/next-adapter')
 
-const { IgnorePlugin } = require('webpack');
+const { IgnorePlugin } = require('webpack')
 
 /** @type {import('next').NextConfig} */
 
@@ -12,10 +12,10 @@ const rule = {
       name: '[name].[ext]',
     },
   },
-};
+}
 
 const nextConfig = {
-async redirects() {
+  async redirects() {
     return [
       {
         source: '/works',
@@ -28,8 +28,8 @@ async redirects() {
   swcMinify: false,
   experimental: {
     optimizeCss: true,
-      legacyBrowsers: false,
-      scrollRestoration: true,
+    legacyBrowsers: false,
+    scrollRestoration: true,
   },
   images: {
     disableStaticImages: true,
@@ -68,6 +68,7 @@ async redirects() {
     'expo-asset',
     'react-native-size-matters',
     'react-native-responsive-screen',
+    'react-native-youtube-iframe',
     'react-native-paper',
     'react-native-svg',
     'zeego',
@@ -78,25 +79,23 @@ async redirects() {
     '@react-navigation/material-top-tabs',
     'react-native-pager-view',
     '@sanity/image-url',
-  '@portabletext/react-native',
-  'styled-components',
-  '@portabletext/react',
-  'react-native-web-webview',
+    '@portabletext/react-native',
+    'styled-components',
+    '@portabletext/react',
+    'react-native-web-webview',
     'react-native-webview',
     'react-native-blob-util',
-  
   ],
-   plugins: [
-   new IgnorePlugin({
-     resourceRegExp: /react-native-pdf/,
-   }),
- ],
+  plugins: [
+    new IgnorePlugin({
+      resourceRegExp: /react-native-pdf/,
+    }),
+  ],
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.(ttf|png|jpg|jpeg|svg|pdf)$/,
       loader: 'url-loader', // or directly file-loader
-    },
-    )
+    })
 
     config.module.rules.push(rule)
 
@@ -105,7 +104,7 @@ async redirects() {
       'react-native$': 'react-native-web',
       '@expo/vector-icons': 'react-native-vector-icons',
       'react-native-webview': 'react-native-web-webview',
-'react-native-pdf$': 'react-pdf'
+      'react-native-pdf$': 'react-pdf',
     }
     config.resolve.extensions = [
       '.web.js',
