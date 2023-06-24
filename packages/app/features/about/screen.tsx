@@ -52,7 +52,7 @@ export function AboutScreen() {
               through history by adding cultural elements based on where they come from. In my
               spare time I volunteer with ASIFA - South as the Programming and Events Coordinator.
 
-              Learn more about about ASIFA - South and our events here:
+              Learn more about ASIFA - South and our events here:
               <BR />
               <TextLink rel="noopener noreferrer" target="_blank"
                 href={'https://www.asifa-south.com/about'}> https://www.asifa-south.com/about</TextLink>
